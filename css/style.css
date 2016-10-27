@@ -1,0 +1,37 @@
+﻿
+
+/* General CSS */
+/* Center and fix main containers*/
+
+#container {
+    width: 100%;
+    background: url(../img/origin_background.jpg) no-repeat center center fixed;
+}
+#externalContainer{
+    text-align:center;
+    width:400px;
+    margin:0 auto;
+    position:relative;
+}
+.verticalAlign{
+
+    background-color:grey;
+    position:relative;
+    top:57%;
+    height:340PX;
+    width:340px;
+    margin-left:30px;
+    padding:5%;
+    transform:translateY(-50%);
+}
+#game_table{
+    cursor:pointer;
+}
+@media only screen and (min-width:40em) {
+    #externalContainer {
+        height:500px;
+    }
+}
+
+
+

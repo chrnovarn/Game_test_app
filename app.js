@@ -30,7 +30,9 @@
                 for (var a = 0; a < 5; a++) {
                     output += '<tr>';
                     for (var b = 0; b < 5; b++) {
-                        output += '<td class="gameCell btn-default" data-user="' + ((a * 5) + b) + '">' + response.data[((a * 5) + b)] + '</td>';
+                        selectedCell = "";
+                        if ((((a * 5) + b) + 1) == response.data[((a * 5) + b)]) selectedCell="correctCell";
+                        output += '<td class="gameCell btn-default ' + selectedCell + '" data-user="' + ((a * 5) + b) + '">' + response.data[((a * 5) + b)] + '</td>';
                     }
                     output += '</tr>';
                 }
@@ -137,10 +139,18 @@
                     $("[data-user]").each(function (index, element) {
                         if ($(element).data("user") == indexAux) {
                             $(element).text(valueCell);
+                            //Aplaying the style, correctCell
+                            if ((indexAux + 1) == valueCell) $(element).addClass("correctCell");
+                            else $(element).removeClass("correctCell");
                         }
                         if ($(element).data("user") == indexCell){
                             $(element).text(valueAux);
+                            //Aplaying the style, correctCell
+                            if ((indexCell + 1) == valueAux) $(element).addClass("correctCell");
+                            else $(element).removeClass("correctCell");
                         }
+
+
                     });
                     //Rewrite styles
                     indexCell = -1;

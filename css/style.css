@@ -10,13 +10,15 @@
     text-align:center;
     width:400px;
     margin:0 auto;
+    top:150px;
     position:relative;
+    
 }
 .verticalAlign{
 
     background-color:grey;
     position:relative;
-    top:57%;
+    top:20%;
     height:240PX;
     width:340px;
     margin-left:30px;
@@ -38,9 +40,9 @@
 #game_table{
     cursor:pointer;
     border-radius: 31px 31px 31px 31px;
--moz-border-radius: 31px 31px 31px 31px;
--webkit-border-radius: 31px 31px 31px 31px;
-border: 2px solid #303030;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 2px solid #303030;
     
 }
 #game_table td{
@@ -57,11 +59,6 @@ border: 2px solid #303030;
     background: -ms-linear-gradient(top, rgba(248,182,0,1) 0%, rgba(248,182,0,1) 2%, rgba(252,234,187,1) 53%, rgba(248,182,0,1) 100%);
     background: linear-gradient(to bottom, rgba(248,182,0,1) 0%, rgba(248,182,0,1) 2%, rgba(252,234,187,1) 53%, rgba(248,182,0,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8b600', endColorstr='#f8b600', GradientType=0 );
-}
-@media only screen and (min-width:40em) {
-    #externalContainer {
-        height:600px;
-    }
 }
 
 
